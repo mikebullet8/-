@@ -35,7 +35,9 @@ Antes de modificar uno, leer su README y su código y ejecutar sus tests si exis
 - Servicios (público): https://docs.google.com/document/d/1sCdEeqUWHqaZFF1tAvBnKMLX27Zk3JDUdnWvpOiC4Z4
 - Cobros: PayPal miguel10608guerra@gmail.com · Binance Pay ID 1113418253. Zona horaria: America/Guatemala.
 - Permisos: puede publicar y crear; NO gastar dinero ni borrar nada sin permiso.
-- Tienda (pública, enlace principal de la bio): https://docs.google.com/document/d/1nOXboczjnO_UyplZtdhp2jmJP5QupKK71ootJiGc3wI
+- Tienda ACTUAL (pública, sin datos personales, única en la bio): https://docs.google.com/document/d/1Cp8bmG8jr7F_4gqXKmOK-iEFSx4kDvntfhgq53Iz82k
+- Docs viejos con el correo personal visible (no usar): tienda 1nOXbocz…, servicios 1sCdEeqU…, página venta 1ckjqgL3….
+- Privacidad: el usuario NO quiere mostrar su correo ni su número. Contacto solo por DM a @atajo.ialatam. (El correo de PayPal en los botones lo aceptó.)
 - Packs $5: Negocios 1b1lc1OchsWqXCbkZmmpPmPviA62YIQksmnngR5-NxcI · Estudiantes 1zF4XErgon9zKR_bHUGgPHZ1GeACKldszcMDrQlO7aMs · Creadores 1XZHrLA2VcZlf2VjCZbDep05zm6QhW3yP5pd6phy39tY (este último debe compartirlo el usuario).
 - Binance afiliado: código GRO_28502_EAXVL, enlace https://www.binance.com/referral/earn-together/refer2earn-usdc/claim?hl=es&ref=GRO_28502_EAXVL&utm_source=referral_entrance (indicar siempre que es enlace de afiliado).
 - Plan: `entregables/plan-ceo.md`.
