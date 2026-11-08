@@ -1,0 +1,52 @@
+{
+"06-servicios-freelance":[
+ {"t":"15 servicios que puedes vender con IA *sin experiencia*","d":2.8},
+ {"tag":"CÓPIALO","t":"Pégalo en la IA:","chat":"Dame 15 servicios que puedo ofrecer como freelancer usando IA sin experiencia. Para cada uno: precio, dónde encontrar clientes y cómo entregarlo.","d":6},
+ {"tag":"RESULTADO","t":"Elige uno y *empieza hoy*","d":2.4},
+ {"t":"Más prompts así *en el perfil*","arrow":true,"d":2.6}],
+"07-cuanto-cobrar":[
+ {"t":"¿No sabes *cuánto cobrar*? Pregúntale a la IA","d":2.8},
+ {"tag":"CÓPIALO","t":"Pégalo así:","chat":"Calcula cuánto debería cobrar por [servicio] si quiero ganar [cantidad] al mes trabajando [horas] horas por semana. Explica el cálculo.","d":6},
+ {"tag":"TRUCO","t":"Pon tus números *reales*","d":2.4},
+ {"t":"100 prompts para ganar dinero *en el perfil*","arrow":true,"d":2.8}],
+"08-ideas-virales":[
+ {"t":"20 ideas de videos *virales* en 10 segundos","d":2.6},
+ {"tag":"CÓPIALO","t":"Pégalo en la IA:","chat":"Genera 20 ideas de videos cortos con alto potencial viral sobre [tema] para TikTok y Reels. Incluye el gancho de los primeros 2 segundos.","d":6},
+ {"tag":"RESULTADO","t":"Nunca más te quedas *sin ideas*","d":2.4},
+ {"t":"Sígueme para más *trucos de IA*","arrow":true,"d":2.6}],
+"09-pagina-ventas":[
+ {"t":"La IA te escribe una página que *vende*","d":2.6},
+ {"tag":"CÓPIALO","t":"Pégalo así:","chat":"Redacta una página de ventas para [producto] con: titular potente, dolores del cliente, beneficios, oferta, garantía y llamada a la acción.","d":6},
+ {"tag":"TRUCO","t":"Luego pídele *3 versiones* del titular","d":2.6},
+ {"t":"Pack de *100 prompts* en el perfil","arrow":true,"d":2.6}],
+"10-curriculum":[
+ {"t":"Tu currículum pasa los filtros con *este prompt*","d":2.8},
+ {"tag":"CÓPIALO","t":"Pégalo en la IA:","chat":"Mejora mi currículum para el puesto de [puesto]: [pega tu CV]. Destaca logros y usa las palabras clave de la oferta.","d":5.5},
+ {"tag":"RESULTADO","t":"Más *entrevistas*, menos rechazos","d":2.4},
+ {"t":"Compártelo con quien busca *trabajo*","arrow":true,"d":2.6}],
+"11-explicame-12-anos":[
+ {"t":"Entiende *cualquier tema* en 1 minuto","d":2.4},
+ {"tag":"CÓPIALO","t":"Pégalo así:","chat":"Explícame [tema] como si tuviera 12 años, y luego como si fuera universitario.","d":4.5},
+ {"tag":"PARA","t":"Estudiar, trabajar o *aprender rápido*","d":2.4},
+ {"t":"Más prompts *en el perfil*","arrow":true,"d":2.4}],
+"12-presupuesto":[
+ {"t":"La IA te dice *dónde se va tu dinero*","d":2.6},
+ {"tag":"CÓPIALO","t":"Pégalo en la IA:","chat":"Crea un presupuesto mensual con estos ingresos [cantidad] y gastos [lista]. Dime dónde puedo recortar.","d":5},
+ {"tag":"RESULTADO","t":"Ahorras desde *este mes*","d":2.4},
+ {"t":"100 prompts de IA *en el perfil*","arrow":true,"d":2.6}],
+"13-mensaje-clientes":[
+ {"t":"Consigue clientes por Instagram *sin parecer spam*","d":2.8},
+ {"tag":"CÓPIALO","t":"Pégalo así:","chat":"Escribe un mensaje corto para ofrecer mis servicios de [servicio] a pequeños negocios por Instagram, sin sonar a spam. Dame 3 versiones.","d":6},
+ {"tag":"TRUCO","t":"Envía *10 al día*","d":2.2},
+ {"t":"Más prompts para vender *en el perfil*","arrow":true,"d":2.6}],
+"14-hazme-preguntas":[
+ {"t":"El prompt más *simple* y más poderoso","d":2.4},
+ {"tag":"CÓPIALO","t":"Empieza siempre así:","chat":"Antes de responder, hazme las preguntas que necesites para darme la mejor respuesta posible sobre [tema].","d":5.5},
+ {"tag":"POR QUÉ","t":"La IA te entiende y responde *a tu medida*","d":2.8},
+ {"t":"Guárdalo. *100 más* en el perfil","arrow":true,"d":2.6}],
+"15-reducir-gastos":[
+ {"big":"20","t":"formas de *gastar menos* sin sufrir","d":2.6},
+ {"tag":"CÓPIALO","t":"Pégalo en la IA:","chat":"Dame 20 formas de reducir gastos fijos sin bajar mucho mi calidad de vida. Vivo en [país].","d":5},
+ {"tag":"TRUCO","t":"Pon tu país para ideas *reales*","d":2.4},
+ {"t":"Más prompts *en el perfil*","arrow":true,"d":2.4}]
+}
