@@ -27,3 +27,12 @@ y desarrollar los proyectos de software que vengan de Codex.
 ## Proyectos de Codex
 Los proyectos traídos desde Codex van en `proyectos/<nombre>/`, cada uno con su README.
 Antes de modificar uno, leer su README y su código y ejecutar sus tests si existen.
+
+## Estado del negocio (Atajo IA)
+- Instagram: @atajo.ialatam (vidIQ platformAccountId 29088446374139389). Reels en `entregables/reels/`, plantilla `plantilla.html`.
+- Pack (producto, público): https://docs.google.com/document/d/1VA-hji4ftp1hNekPAz1Buq-5XR0f6QLRKkQAE_z5Hv8
+- Página de venta del pack (pública, en la bio): https://docs.google.com/document/d/1ckjqgL3SukejSccv5R32MRaGMcpR_I-Tz-VYNlHiAtA
+- Servicios (público): https://docs.google.com/document/d/1sCdEeqUWHqaZFF1tAvBnKMLX27Zk3JDUdnWvpOiC4Z4
+- Cobros: PayPal miguel10608guerra@gmail.com · Binance Pay ID 1113418253. Zona horaria: America/Guatemala.
+- Permisos: puede publicar y crear; NO gastar dinero ni borrar nada sin permiso.
+- Plan: `entregables/plan-ceo.md`.
