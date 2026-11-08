@@ -1,0 +1,14 @@
+{
+"26-dentista-bot":[
+ {"tag":"3:07 A. M.","t":"Este dentista responde pacientes *a las 3 de la mañana*","d":2.8},
+ {"t":"…y está *dormido* 😴","d":1.8},
+ {"tag":"PACIENTE","t":"Le escribo:","chat":"¿Cuánto cuesta una limpieza?","d":2.6},
+ {"tag":"BOT IA","t":"Responde al instante:","chat":"Limpieza: $35. Atendemos lun-sáb 8:00-18:00. ¿Te agendo una cita?","d":4.2},
+ {"tag":"PACIENTE","t":"Le pido cita:","chat":"Sí, mañana en la mañana","d":2.4},
+ {"tag":"BOT IA","t":"Y la agenda solo:","chat":"Listo ✅ Mañana 10:00 a. m. Te esperamos.","d":3.4},
+ {"t":"Cada mensaje sin responder = *un paciente perdido*","d":2.8},
+ {"tag":"DEMO","t":"Asistente de IA en tu WhatsApp, *instalado en 48\u00a0h*","d":2.8},
+ {"big":"3","t":"instalaciones *GRATIS* esta semana","d":2.4},
+ {"t":"Escríbeme *DENTAL* por DM","arrow":true,"d":3}
+]
+}
