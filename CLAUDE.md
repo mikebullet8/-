@@ -34,7 +34,7 @@ Antes de modificar uno, leer su README y su código y ejecutar sus tests si exis
 - Página de venta del pack (pública, en la bio): https://docs.google.com/document/d/1ckjqgL3SukejSccv5R32MRaGMcpR_I-Tz-VYNlHiAtA
 - Servicios (público): https://docs.google.com/document/d/1sCdEeqUWHqaZFF1tAvBnKMLX27Zk3JDUdnWvpOiC4Z4
 - Cobros: PayPal miguel10608guerra@gmail.com · Binance Pay ID 1113418253. Zona horaria: America/Guatemala.
-- Permisos: puede publicar y crear; NO gastar dinero ni borrar nada sin permiso.
+- Permisos: EJECUTAR SIN PREGUNTAR (publicar, crear, programar, mejorar). Única excepción: NO gastar dinero ni borrar nada sin permiso.
 - Tienda ACTUAL (pública, sin datos personales, única en la bio): https://docs.google.com/document/d/1Cp8bmG8jr7F_4gqXKmOK-iEFSx4kDvntfhgq53Iz82k
 - Docs viejos con el correo personal visible (no usar): tienda 1nOXbocz…, servicios 1sCdEeqU…, página venta 1ckjqgL3….
 - Privacidad: el usuario NO quiere mostrar su correo ni su número. Contacto solo por DM a @atajo.ialatam. (El correo de PayPal en los botones lo aceptó.)
