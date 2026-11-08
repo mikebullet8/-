@@ -32,3 +32,12 @@ Requiere solo Python 3 (sin librerías externas). El CSV debe tener columnas `da
 Ninguna estrategia gana de forma consistente. En fuera de muestra, la EMA 9/21 tiene mejor
 caída máxima y Sharpe que comprar y mantener, pero con pocas operaciones. Resultados así
 no garantizan ventaja futura.
+
+## Simulación Monte Carlo (montecarlo.py)
+
+Corre cada estrategia en 1.000 caminos de precio generados barajando bloques de 10 días
+de retornos reales. Sirve para ver si el resultado real está fuera de lo que da el azar
+con la misma volatilidad. Limitación: el barajado conserva la deriva promedio del oro,
+así que comprar y mantener sale casi siempre positivo en la simulación.
+
+    python3 montecarlo.py data/xau_daily.csv
