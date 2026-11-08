@@ -1,46 +1,84 @@
 <!doctype html><html><head><meta charset="utf-8"><style>
 *{box-sizing:border-box;margin:0}
-html,body{width:1080px;height:1920px;overflow:hidden;background:#0f0e0b;font-family:'DejaVu Sans',sans-serif;color:#f3f1ea}
-#bg{position:absolute;inset:0;background:radial-gradient(circle at 30% 20%,#2a2508 0,#0f0e0b 55%)}
-#bar{position:absolute;top:0;left:0;height:14px;background:#ffd400;width:0}
-#brand{position:absolute;top:120px;left:90px;font:700 40px 'DejaVu Sans';color:#ffd400;letter-spacing:4px}
-.scene{position:absolute;left:90px;right:150px;top:560px;opacity:0;transform:translateY(60px);transition:opacity .35s,transform .45s cubic-bezier(.2,1.4,.4,1)}
-.scene.on{opacity:1;transform:none}
-.tag{display:inline-block;background:#ffd400;color:#141208;font:800 40px 'DejaVu Sans';padding:8px 22px;border-radius:10px;margin-bottom:34px}
-.t{font:800 92px/1.12 'DejaVu Sans'}
-.t.m{font-size:74px}
-.hl{background:linear-gradient(#ffd400,#ffd400) no-repeat 0 85%/0% 38%;transition:background-size .6s .4s}
-.on .hl{background-size:100% 38%}
-.chat{margin-top:46px;background:#1e1d17;border:4px solid #ffd400;border-radius:28px;padding:34px 36px;font:500 44px/1.45 'DejaVu Sans Mono';min-height:200px}
-.chat .cur{display:inline-block;width:22px;height:46px;background:#ffd400;vertical-align:-8px;animation:b 0.7s steps(1) infinite}
-@keyframes b{50%{opacity:0}}
-.arrow{font-size:150px;color:#ffd400;margin-top:40px;animation:bob .8s ease-in-out infinite alternate}
-@keyframes bob{to{transform:translateY(30px)}}
-.big{font:900 260px/1 'DejaVu Sans';color:#ffd400}
-.dm{margin-top:40px;display:flex;flex-direction:column;gap:22px}
-.b{max-width:85%;padding:24px 30px;border-radius:34px;font:500 44px/1.35 'DejaVu Sans';opacity:0;transform:scale(.85);transition:opacity .25s,transform .3s cubic-bezier(.2,1.5,.4,1)}
-.b.show{opacity:1;transform:none}
-.b.yo{align-self:flex-end;background:#ffd400;color:#141208;border-bottom-right-radius:8px}
-.b.ia{align-self:flex-start;background:#2a2922;color:#f3f1ea;border-bottom-left-radius:8px}
-.who{font:700 30px 'DejaVu Sans';opacity:.6;display:block;margin-bottom:6px}
-</style></head><body><div id="bg"></div><div id="bar"></div><div id="brand">⚡ ATAJO IA</div><div id="stage"></div>
+:root{--y:#ffd400;--ink:#0a0a10;--fg:#ffffff;--muted:rgba(255,255,255,.62);
+  --display:"Inter Display","Inter","Noto Color Emoji",sans-serif;--mono:"JetBrains Mono",monospace}
+html,body{width:1080px;height:1920px;overflow:hidden;background:var(--ink);font-family:var(--display);color:var(--fg)}
+/* fondo animado: manchas de luz que se mueven despacio */
+.blob{position:absolute;border-radius:50%;filter:blur(120px);opacity:.55}
+.b1{width:900px;height:900px;background:#ffb800;left:-300px;top:-250px;animation:m1 9s ease-in-out infinite alternate}
+.b2{width:800px;height:800px;background:#ff4d6d;right:-350px;top:700px;opacity:.35;animation:m2 11s ease-in-out infinite alternate}
+.b3{width:700px;height:700px;background:#5b5bff;left:-200px;bottom:-300px;opacity:.35;animation:m3 10s ease-in-out infinite alternate}
+@keyframes m1{to{transform:translate(220px,160px) scale(1.15)}}
+@keyframes m2{to{transform:translate(-200px,-180px) scale(1.1)}}
+@keyframes m3{to{transform:translate(260px,-120px) scale(1.2)}}
+#grain{position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.05) 1px,transparent 1px);background-size:6px 6px}
+#bar{position:absolute;top:70px;left:90px;right:90px;height:10px;border-radius:6px;background:rgba(255,255,255,.15);overflow:hidden}
+#bar i{display:block;height:100%;width:0;background:var(--y);border-radius:6px}
+#brand{position:absolute;top:120px;left:90px;display:flex;align-items:center;gap:16px;font:800 38px var(--display);letter-spacing:.5px}
+#brand .av{width:64px;height:64px;border-radius:50%;background:var(--y);color:var(--ink);display:grid;place-items:center;font-size:36px}
+#handle{position:absolute;bottom:170px;left:0;right:0;text-align:center;font:600 34px var(--display);color:var(--muted)}
+.scene{position:absolute;left:80px;right:80px;top:0;bottom:0;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;opacity:0;transition:opacity .3s}
+.scene.on{opacity:1}
+.tag{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.12);border:2px solid rgba(255,255,255,.25);color:var(--fg);font:800 38px var(--display);padding:12px 28px;border-radius:999px;margin-bottom:40px;letter-spacing:1px;transform:translateY(20px);opacity:0;transition:all .35s .05s}
+.on .tag{transform:none;opacity:1}
+.t{font:900 104px/1.06 var(--display);letter-spacing:-2px;text-wrap:balance;text-shadow:0 8px 40px rgba(0,0,0,.45)}
+.t.m{font-size:80px}
+.w{display:inline-block;opacity:0;transform:translateY(40px) scale(.9);transition:opacity .25s,transform .35s cubic-bezier(.2,1.6,.4,1)}
+.on .w{opacity:1;transform:none}
+.hl{background:var(--y);color:var(--ink);padding:0 18px;border-radius:14px;transform:rotate(-2deg);margin:4px 0;text-shadow:none;box-shadow:0 10px 30px rgba(255,212,0,.35)}
+.on .w.hl{transform:rotate(-2deg)}
+.card{margin-top:50px;width:100%;text-align:left;background:rgba(255,255,255,.08);border:2px solid rgba(255,255,255,.18);backdrop-filter:blur(20px);border-radius:36px;padding:36px 40px 40px;box-shadow:0 30px 80px rgba(0,0,0,.4)}
+.card .top{display:flex;justify-content:space-between;align-items:center;margin-bottom:22px;font:700 30px var(--display);color:var(--muted)}
+.card .copy{background:var(--y);color:var(--ink);padding:8px 20px;border-radius:12px;font:800 28px var(--display)}
+.card .txt{font:500 42px/1.45 var(--mono);color:#fff;min-height:120px}
+.cur{display:inline-block;width:20px;height:44px;background:var(--y);vertical-align:-8px;animation:bl .7s steps(1) infinite}
+@keyframes bl{50%{opacity:0}}
+.big{font:900 300px/1 var(--display);color:var(--y);letter-spacing:-8px;text-shadow:0 20px 60px rgba(255,212,0,.35);margin-bottom:10px}
+.cta{margin-top:50px;display:inline-flex;align-items:center;gap:16px;background:var(--y);color:var(--ink);font:900 46px var(--display);padding:24px 44px;border-radius:999px;box-shadow:0 20px 60px rgba(255,212,0,.4);animation:pulse 1.1s ease-in-out infinite}
+@keyframes pulse{50%{transform:scale(1.06)}}
+.dm{margin-top:40px;width:100%;display:flex;flex-direction:column;gap:22px;text-align:left}
+.dmh{display:flex;align-items:center;gap:16px;font:700 32px var(--display);color:var(--muted);margin-bottom:6px}
+.dmh .dot{width:14px;height:14px;border-radius:50%;background:#2ecc71}
+.bub{max-width:86%;padding:26px 32px;border-radius:38px;font:600 46px/1.32 var(--display);opacity:0;transform:translateY(20px) scale(.92);transition:opacity .25s,transform .35s cubic-bezier(.2,1.5,.4,1)}
+.bub.show{opacity:1;transform:none}
+.bub.yo{align-self:flex-end;background:var(--y);color:var(--ink);border-bottom-right-radius:10px}
+.bub.ia{align-self:flex-start;background:rgba(255,255,255,.14);color:#fff;border-bottom-left-radius:10px;backdrop-filter:blur(10px)}
+.typing{align-self:flex-start;display:flex;gap:10px;padding:26px 32px;background:rgba(255,255,255,.14);border-radius:38px;opacity:0}
+.typing.show{opacity:1}.typing i{width:16px;height:16px;border-radius:50%;background:#fff;animation:tp 1s infinite}
+.typing i:nth-child(2){animation-delay:.15s}.typing i:nth-child(3){animation-delay:.3s}
+@keyframes tp{50%{transform:translateY(-8px);opacity:.5}}
+</style></head><body>
+<div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div><div id="grain"></div>
+<div id="bar"><i></i></div>
+<div id="brand"><div class="av">A</div>Atajo IA</div>
+<div id="handle">@atajo.ialatam</div>
+<div id="stage"></div>
 <script>
 const S=JSON.parse(decodeURIComponent(location.hash.slice(1)));
 const total=S.reduce((a,s)=>a+s.d,0);
 const st=document.getElementById('stage');
-const hl=t=>t.replace(/\*(.+?)\*/g,'<span class="hl">$1</span>');
+function words(t){let hl=false;const tk=[];t.split(/\s+/).filter(Boolean).forEach(w=>{if(w.startsWith('*'))hl=true;const c=hl;if(/\*[.,!?:]*$/.test(w))hl=false;w=w.replace(/\*/g,'');
+  const last=tk[tk.length-1];if(c&&last&&last.c)last.w+=' '+w;else tk.push({w,c})});
+  return tk.map((x,i)=>`<span class="w${x.c?' hl':''}" style="transition-delay:${0.08+i*0.08}s">${x.w}</span>`).join(' ')}
 let t0=0;
-S.forEach((s,i)=>{
+S.forEach(s=>{
   const el=document.createElement('div');el.className='scene';
-  el.innerHTML=(s.tag?`<div class="tag">${s.tag}</div>`:'')+(s.big?`<div class="big">${s.big}</div>`:'')+`<div class="t ${s.chat?'m':''}">${hl(s.t)}</div>`+(s.chat?`<div class="chat"><span class="ty"></span><span class="cur"></span></div>`:'')+(s.arrow?'<div class="arrow">↓</div>':'')+(s.dm?'<div class="dm">'+s.dm.map(m=>`<div class="b ${m[0]}"><span class="who">${m[0]=='yo'?'Tú':'IA'}</span>${hl(m[1])}</div>`).join('')+'</div>':'');
-  st.appendChild(el);
+  const isCta=!!s.arrow;
+  let h='';
+  if(s.tag)h+=`<div class="tag">${s.tag}</div>`;
+  if(s.big)h+=`<div class="big">${s.big}</div>`;
+  if(s.t)h+=`<div class="t ${(s.chat||s.dm)?'m':''}">${words(s.t)}</div>`;
+  if(s.chat)h+=`<div class="card"><div class="top"><span>✨ Prompt</span><span class="copy">Copiar</span></div><div class="txt"><span class="ty"></span><span class="cur"></span></div></div>`;
+  if(s.dm)h+=`<div class="dm"><div class="dmh"><span class="dot"></span>IA · en línea</div>`+s.dm.map(m=>`<div class="bub ${m[0]}">${m[1].replace(/\*/g,'')}</div>`).join('')+`</div>`;
+  if(isCta)h+=`<div class="cta">👆 Link en el perfil</div>`;
+  el.innerHTML=h;st.appendChild(el);
   setTimeout(()=>{document.querySelectorAll('.scene').forEach(x=>x.classList.remove('on'));el.classList.add('on');
-    if(s.dm){const bs=el.querySelectorAll('.b');const gap=(s.d*1000-500)/bs.length;bs.forEach((b,j)=>setTimeout(()=>b.classList.add('show'),300+j*gap))}
-    if(s.chat){const ty=el.querySelector('.ty');let k=0;const sp=Math.max(12,Math.min(40,(s.d*1000-900)/s.chat.length));
-      const iv=setInterval(()=>{ty.textContent=s.chat.slice(0,++k);if(k>=s.chat.length)clearInterval(iv)},sp)}
+    if(s.chat){const ty=el.querySelector('.ty');let k=0;const sp=Math.max(12,Math.min(38,(s.d*1000-1000)/s.chat.length));
+      setTimeout(()=>{const iv=setInterval(()=>{ty.textContent=s.chat.slice(0,++k);if(k>=s.chat.length)clearInterval(iv)},sp)},350)}
+    if(s.dm){const bs=el.querySelectorAll('.bub');const gap=(s.d*1000-600)/bs.length;bs.forEach((b,j)=>setTimeout(()=>b.classList.add('show'),250+j*gap))}
   },t0*1000);
   t0+=s.d;
 });
-const bar=document.getElementById('bar');const start=performance.now();
+const bar=document.querySelector('#bar i');const start=performance.now();
 (function f(){const p=Math.min(1,(performance.now()-start)/(total*1000));bar.style.width=(p*100)+'%';if(p<1)requestAnimationFrame(f)})();
 </script></body></html>
