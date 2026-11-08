@@ -1,0 +1,198 @@
+{
+ "s01-dia-1": [
+  {
+   "tag": "DÍA 1",
+   "t": "Probando trabajos extra *con IA*",
+   "d": 2.4
+  },
+  {
+   "tag": "EL TRABAJO",
+   "t": "Descripciones de productos para tiendas online",
+   "d": 2.6
+  },
+  {
+   "tag": "EL PROMPT",
+   "t": "Pégalo en la IA:",
+   "chat": "Escribe descripciones atractivas de máx. 80 palabras para estos productos de una tienda online: [lista]. Enfócate en beneficios.",
+   "d": 5.5
+  },
+  {
+   "tag": "CÓMO COBRAR",
+   "t": "Ofrécelo a *5 negocios* por mensaje hoy",
+   "d": 2.6
+  },
+  {
+   "t": "Sígueme para el *día 2*",
+   "arrow": true,
+   "d": 2.4
+  }
+ ],
+ "s02-dia-2": [
+  {
+   "tag": "DÍA 2",
+   "t": "Probando trabajos extra *con IA*",
+   "d": 2.4
+  },
+  {
+   "tag": "EL TRABAJO",
+   "t": "Publicaciones para negocios de tu barrio",
+   "d": 2.6
+  },
+  {
+   "tag": "EL PROMPT",
+   "t": "Pégalo en la IA:",
+   "chat": "Escribe 10 publicaciones de Instagram para un/una [negocio] de mi barrio que muestren su día a día y atraigan clientes.",
+   "d": 5.5
+  },
+  {
+   "tag": "CÓMO COBRAR",
+   "t": "Ofrécelo a *5 negocios* por mensaje hoy",
+   "d": 2.6
+  },
+  {
+   "t": "Sígueme para el *día 3*",
+   "arrow": true,
+   "d": 2.4
+  }
+ ],
+ "s03-dia-3": [
+  {
+   "tag": "DÍA 3",
+   "t": "Probando trabajos extra *con IA*",
+   "d": 2.4
+  },
+  {
+   "tag": "EL TRABAJO",
+   "t": "Mejorar currículums",
+   "d": 2.6
+  },
+  {
+   "tag": "EL PROMPT",
+   "t": "Pégalo en la IA:",
+   "chat": "Mejora este currículum para el puesto de [puesto]: [CV]. Destaca logros y usa las palabras clave de la oferta.",
+   "d": 5.5
+  },
+  {
+   "tag": "CÓMO COBRAR",
+   "t": "Ofrécelo a *5 negocios* por mensaje hoy",
+   "d": 2.6
+  },
+  {
+   "t": "Sígueme para el *día 4*",
+   "arrow": true,
+   "d": 2.4
+  }
+ ],
+ "s04-dia-4": [
+  {
+   "tag": "DÍA 4",
+   "t": "Probando trabajos extra *con IA*",
+   "d": 2.4
+  },
+  {
+   "tag": "EL TRABAJO",
+   "t": "Subtítulos y traducciones de videos",
+   "d": 2.6
+  },
+  {
+   "tag": "EL PROMPT",
+   "t": "Pégalo en la IA:",
+   "chat": "Traduce al inglés esta transcripción de video y divídela en subtítulos de máximo 2 líneas: [texto].",
+   "d": 5.5
+  },
+  {
+   "tag": "CÓMO COBRAR",
+   "t": "Ofrécelo a *5 negocios* por mensaje hoy",
+   "d": 2.6
+  },
+  {
+   "t": "Sígueme para el *día 5*",
+   "arrow": true,
+   "d": 2.4
+  }
+ ],
+ "s05-dia-5": [
+  {
+   "tag": "DÍA 5",
+   "t": "Probando trabajos extra *con IA*",
+   "d": 2.4
+  },
+  {
+   "tag": "EL TRABAJO",
+   "t": "Menús y planes de comida",
+   "d": 2.6
+  },
+  {
+   "tag": "EL PROMPT",
+   "t": "Pégalo en la IA:",
+   "chat": "Crea un plan de comidas semanal económico para una familia de 4 en [país], con lista de compras.",
+   "d": 5.5
+  },
+  {
+   "tag": "CÓMO COBRAR",
+   "t": "Ofrécelo a *5 negocios* por mensaje hoy",
+   "d": 2.6
+  },
+  {
+   "t": "Sígueme para el *día 6*",
+   "arrow": true,
+   "d": 2.4
+  }
+ ],
+ "s06-dia-6": [
+  {
+   "tag": "DÍA 6",
+   "t": "Probando trabajos extra *con IA*",
+   "d": 2.4
+  },
+  {
+   "tag": "EL TRABAJO",
+   "t": "Responder reseñas de Google",
+   "d": 2.6
+  },
+  {
+   "tag": "EL PROMPT",
+   "t": "Pégalo en la IA:",
+   "chat": "Responde estas 5 reseñas de un restaurante de forma cercana y profesional, distinta cada una: [reseñas].",
+   "d": 5.5
+  },
+  {
+   "tag": "CÓMO COBRAR",
+   "t": "Ofrécelo a *5 negocios* por mensaje hoy",
+   "d": 2.6
+  },
+  {
+   "t": "Sígueme para el *día 7*",
+   "arrow": true,
+   "d": 2.4
+  }
+ ],
+ "s07-dia-7": [
+  {
+   "tag": "DÍA 7",
+   "t": "Probando trabajos extra *con IA*",
+   "d": 2.4
+  },
+  {
+   "tag": "EL TRABAJO",
+   "t": "Vender packs de prompts",
+   "d": 2.6
+  },
+  {
+   "tag": "EL PROMPT",
+   "t": "Pégalo en la IA:",
+   "chat": "Dame 5 ideas de packs de prompts que pueda vender a [público], con título, precio y 3 prompts de ejemplo de cada uno.",
+   "d": 5.5
+  },
+  {
+   "tag": "CÓMO COBRAR",
+   "t": "Ofrécelo a *5 negocios* por mensaje hoy",
+   "d": 2.6
+  },
+  {
+   "t": "Más prompts en la *tienda del perfil*",
+   "arrow": true,
+   "d": 2.4
+  }
+ ]
+}
