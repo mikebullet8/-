@@ -38,6 +38,9 @@ p{margin:0}
 button{font:600 15px var(--body);background:var(--accent);color:var(--on-accent);border:0;border-radius:6px;padding:10px 16px;cursor:pointer}
 button:focus-visible{outline:3px solid var(--fg);outline-offset:2px}
 .note{font-size:14px}
+.pp{background:var(--panel);color:var(--fg);border:1px solid var(--line)}
+.ppbtn{display:block;text-align:center;background:var(--accent);color:var(--on-accent);font:700 18px var(--body);text-decoration:none;border-radius:8px;padding:16px}
+.ppbtn:focus-visible{outline:3px solid var(--fg);outline-offset:2px}
 .faq{display:flex;flex-direction:column;gap:0}
 details{border-bottom:1px solid var(--line);padding-block:14px}
 summary{cursor:pointer;font-weight:700}
@@ -50,7 +53,7 @@ footer{color:var(--muted);font-size:13px}
     <div class="brand">⚡ Atajo IA</div>
     <h1>100 prompts de IA para ganar <em>dinero</em> y <em>tiempo</em></h1>
     <p class="lead">Copia, pega y adapta. Listos para Claude, ChatGPT y Gemini, ordenados por lo que quieres conseguir.</p>
-    <div class="price"><b>7 USDT</b><span>pago único · acceso inmediato tras confirmar</span></div>
+    <div class="price"><b>$7</b><span>pago único · PayPal, tarjeta o Binance</span></div>
   </header>
 
   <section>
@@ -74,6 +77,13 @@ footer{color:var(--muted);font-size:13px}
     <div class="prompt"><small>PROMPT 1 · GANAR DINERO</small>Actúa como experto en negocios digitales. Tengo estas habilidades: [tus habilidades]. Dame 10 formas de ganar dinero online con ellas usando IA, ordenadas de más rápida a más lenta, con el primer paso de cada una.</div>
     <div class="prompt"><small>PROMPT 43 · EMPLEO</small>Simula una entrevista de trabajo para [puesto]. Hazme una pregunta cada vez y evalúa mis respuestas.</div>
     <div class="prompt"><small>PROMPT 93 · MAESTRO</small>Critica tu respuesta anterior como lo haría un experto exigente y luego dame una versión mejorada.</div>
+  </section>
+
+  <section class="pay pp" id="paypal">
+    <h2>Comprar con PayPal o tarjeta</h2>
+    <p>7 USD. Al terminar el pago, PayPal te lleva directamente al pack.</p>
+    <a class="ppbtn" href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&amp;business=miguel10608guerra%40gmail.com&amp;item_name=Pack%20100%20Prompts%20de%20IA%20-%20Atajo%20IA&amp;amount=7.00&amp;currency_code=USD&amp;no_shipping=1&amp;return=https%3A%2F%2Fdocs.google.com%2Fdocument%2Fd%2F1VA-hji4ftp1hNekPAz1Buq-5XR0f6QLRKkQAE_z5Hv8%2Fedit%3Fusp%3Dsharing" target="_blank" rel="noopener">Pagar 7 USD con PayPal</a>
+    <p class="note">Si no vuelves al pack tras pagar, escribe a miguel10608guerra@gmail.com y te lo enviamos.</p>
   </section>
 
   <section class="pay" id="pagar">
@@ -103,7 +113,7 @@ footer{color:var(--muted);font-size:13px}
     <details><summary>¿No he recibido el pack?</summary><p>Comprueba que escribiste tu email en la nota del pago y revisa la carpeta de spam. La entrega puede tardar hasta 24 horas.</p></details>
   </section>
 
-  <footer>Atajo IA · Producto digital. Pagos con Binance Pay en USDT.</footer>
+  <footer>Atajo IA · Producto digital. Pagos con PayPal (USD) o Binance Pay (USDT).</footer>
 </div>
 
 <script>
