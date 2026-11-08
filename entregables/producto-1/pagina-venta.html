@@ -1,0 +1,116 @@
+<title>Pack 100 Prompts IA</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;600;700&family=JetBrains+Mono:wght@500;700&display=swap">
+<style>
+/* Layout: una sola columna estrecha tipo "ficha de producto" en el móvil: oferta → muestra → cómo pagar → FAQ */
+:root{
+  --bg:#0f0e0b; --panel:#1b1a15; --line:#34322a; --fg:#f3f1ea; --muted:#a9a596; --accent:#ffd400; --on-accent:#141208;
+  --display:"Archivo Black","Arial Black",Impact,sans-serif;
+  --body:"Archivo",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+  color-scheme:dark;
+}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.55}
+.wrap{max-width:620px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 56px;display:flex;flex-direction:column;gap:40px}
+.brand{font-family:var(--mono);font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+h1{font-family:var(--display);font-weight:400;font-size:clamp(34px,9vw,54px);line-height:1.02;margin:10px 0 14px;text-wrap:balance;letter-spacing:-.01em}
+h1 em{font-style:normal;color:var(--accent)}
+h2{font-family:var(--display);font-weight:400;font-size:24px;line-height:1.15;margin:0 0 14px;text-wrap:balance}
+p{margin:0}
+.lead{color:var(--muted);font-size:18px;max-width:60ch}
+.price{display:flex;align-items:baseline;gap:12px;margin-top:20px}
+.price b{font-family:var(--display);font-weight:400;font-size:44px;color:var(--accent)}
+.price span{color:var(--muted)}
+.cats{display:grid;grid-template-columns:1fr 1fr;gap:8px 16px;padding:0;margin:0;list-style:none}
+.cats li{display:flex;justify-content:space-between;gap:8px;border-bottom:1px solid var(--line);padding-block:8px;font-size:15px;min-width:0}
+.cats li span{font-family:var(--mono);color:var(--muted);font-size:13px}
+@media (max-width:460px){.cats{grid-template-columns:1fr}}
+.sample{display:flex;flex-direction:column;gap:10px}
+.prompt{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:14px 16px;font-size:15px}
+.prompt small{display:block;font-family:var(--mono);color:var(--accent);font-size:12px;letter-spacing:.08em;margin-bottom:6px}
+.pay{background:var(--accent);color:var(--on-accent);border-radius:10px;padding:24px 20px;display:flex;flex-direction:column;gap:16px}
+.pay h2{margin:0}
+.steps{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:10px}
+.idbox{display:flex;flex-wrap:wrap;align-items:center;gap:10px;background:var(--on-accent);color:var(--fg);border-radius:8px;padding:12px 14px}
+.idbox .lbl{font-size:12px;font-family:var(--mono);letter-spacing:.08em;color:var(--muted);width:100%}
+.idbox code{font-family:var(--mono);font-weight:700;font-size:24px;letter-spacing:.04em;user-select:all;flex:1;min-width:0}
+button{font:600 15px var(--body);background:var(--accent);color:var(--on-accent);border:0;border-radius:6px;padding:10px 16px;cursor:pointer}
+button:focus-visible{outline:3px solid var(--fg);outline-offset:2px}
+.note{font-size:14px}
+.faq{display:flex;flex-direction:column;gap:0}
+details{border-bottom:1px solid var(--line);padding-block:14px}
+summary{cursor:pointer;font-weight:700}
+details p{color:var(--muted);margin-top:8px}
+footer{color:var(--muted);font-size:13px}
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="brand">⚡ Atajo IA</div>
+    <h1>100 prompts de IA para ganar <em>dinero</em> y <em>tiempo</em></h1>
+    <p class="lead">Copia, pega y adapta. Listos para Claude, ChatGPT y Gemini, ordenados por lo que quieres conseguir.</p>
+    <div class="price"><b>7 USDT</b><span>pago único · acceso inmediato tras confirmar</span></div>
+  </header>
+
+  <section>
+    <h2>Qué incluye</h2>
+    <ul class="cats">
+      <li>Ganar dinero con IA <span>10</span></li>
+      <li>Contenido para redes <span>10</span></li>
+      <li>Ventas y copywriting <span>10</span></li>
+      <li>Productividad <span>10</span></li>
+      <li>Trabajo y empleo <span>10</span></li>
+      <li>Estudiar y aprender <span>10</span></li>
+      <li>Finanzas personales <span>10</span></li>
+      <li>Marca personal <span>10</span></li>
+      <li>Clientes y comunidad <span>10</span></li>
+      <li>Prompts maestros <span>10</span></li>
+    </ul>
+  </section>
+
+  <section class="sample">
+    <h2>Prueba 3 gratis</h2>
+    <div class="prompt"><small>PROMPT 1 · GANAR DINERO</small>Actúa como experto en negocios digitales. Tengo estas habilidades: [tus habilidades]. Dame 10 formas de ganar dinero online con ellas usando IA, ordenadas de más rápida a más lenta, con el primer paso de cada una.</div>
+    <div class="prompt"><small>PROMPT 43 · EMPLEO</small>Simula una entrevista de trabajo para [puesto]. Hazme una pregunta cada vez y evalúa mis respuestas.</div>
+    <div class="prompt"><small>PROMPT 93 · MAESTRO</small>Critica tu respuesta anterior como lo haría un experto exigente y luego dame una versión mejorada.</div>
+  </section>
+
+  <section class="pay" id="pagar">
+    <h2>Cómo comprar con Binance Pay</h2>
+    <ol class="steps">
+      <li>Abre Binance → <b>Pay</b> → <b>Enviar</b>.</li>
+      <li>Elige <b>Pay ID</b> y pega este número:</li>
+    </ol>
+    <div class="idbox">
+      <span class="lbl">BINANCE PAY ID</span>
+      <code id="payid">1113418253</code>
+      <button type="button" id="copy">Copiar</button>
+    </div>
+    <ol class="steps" start="3">
+      <li>Envía <b>7 USDT</b>.</li>
+      <li>En la <b>nota</b> del pago escribe <b>tu email</b>.</li>
+      <li>Recibirás el enlace al pack en tu email en menos de 24 horas.</li>
+    </ol>
+    <p class="note">Antes de confirmar, comprueba que el Pay ID es exactamente 1113418253.</p>
+  </section>
+
+  <section class="faq">
+    <h2>Preguntas frecuentes</h2>
+    <details><summary>¿En qué formato llega?</summary><p>Un documento de Google que puedes leer en el móvil o descargar en PDF.</p></details>
+    <details><summary>¿Necesito pagar alguna IA?</summary><p>No. Todos los prompts funcionan con las versiones gratuitas de Claude, ChatGPT o Gemini.</p></details>
+    <details><summary>¿Me garantiza ganar dinero?</summary><p>No. Son herramientas para trabajar más rápido y con mejores ideas; el resultado depende de cómo las apliques.</p></details>
+    <details><summary>¿No he recibido el pack?</summary><p>Comprueba que escribiste tu email en la nota del pago y revisa la carpeta de spam. La entrega puede tardar hasta 24 horas.</p></details>
+  </section>
+
+  <footer>Atajo IA · Producto digital. Pagos con Binance Pay en USDT.</footer>
+</div>
+
+<script>
+document.getElementById('copy').addEventListener('click', async (e) => {
+  const b = e.currentTarget, id = document.getElementById('payid').textContent;
+  try { await navigator.clipboard.writeText(id); b.textContent = 'Copiado'; }
+  catch { const r = document.createRange(); r.selectNodeContents(document.getElementById('payid')); const s = getSelection(); s.removeAllRanges(); s.addRange(r); b.textContent = 'Selecciónalo y copia'; }
+  setTimeout(() => b.textContent = 'Copiar', 2500);
+});
+</script>
