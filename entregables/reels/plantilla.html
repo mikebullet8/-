@@ -17,6 +17,12 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#0f0e0b;font-fam
 .arrow{font-size:150px;color:#ffd400;margin-top:40px;animation:bob .8s ease-in-out infinite alternate}
 @keyframes bob{to{transform:translateY(30px)}}
 .big{font:900 260px/1 'DejaVu Sans';color:#ffd400}
+.dm{margin-top:40px;display:flex;flex-direction:column;gap:22px}
+.b{max-width:85%;padding:24px 30px;border-radius:34px;font:500 44px/1.35 'DejaVu Sans';opacity:0;transform:scale(.85);transition:opacity .25s,transform .3s cubic-bezier(.2,1.5,.4,1)}
+.b.show{opacity:1;transform:none}
+.b.yo{align-self:flex-end;background:#ffd400;color:#141208;border-bottom-right-radius:8px}
+.b.ia{align-self:flex-start;background:#2a2922;color:#f3f1ea;border-bottom-left-radius:8px}
+.who{font:700 30px 'DejaVu Sans';opacity:.6;display:block;margin-bottom:6px}
 </style></head><body><div id="bg"></div><div id="bar"></div><div id="brand">⚡ ATAJO IA</div><div id="stage"></div>
 <script>
 const S=JSON.parse(decodeURIComponent(location.hash.slice(1)));
@@ -26,9 +32,10 @@ const hl=t=>t.replace(/\*(.+?)\*/g,'<span class="hl">$1</span>');
 let t0=0;
 S.forEach((s,i)=>{
   const el=document.createElement('div');el.className='scene';
-  el.innerHTML=(s.tag?`<div class="tag">${s.tag}</div>`:'')+(s.big?`<div class="big">${s.big}</div>`:'')+`<div class="t ${s.chat?'m':''}">${hl(s.t)}</div>`+(s.chat?`<div class="chat"><span class="ty"></span><span class="cur"></span></div>`:'')+(s.arrow?'<div class="arrow">↓</div>':'');
+  el.innerHTML=(s.tag?`<div class="tag">${s.tag}</div>`:'')+(s.big?`<div class="big">${s.big}</div>`:'')+`<div class="t ${s.chat?'m':''}">${hl(s.t)}</div>`+(s.chat?`<div class="chat"><span class="ty"></span><span class="cur"></span></div>`:'')+(s.arrow?'<div class="arrow">↓</div>':'')+(s.dm?'<div class="dm">'+s.dm.map(m=>`<div class="b ${m[0]}"><span class="who">${m[0]=='yo'?'Tú':'IA'}</span>${hl(m[1])}</div>`).join('')+'</div>':'');
   st.appendChild(el);
   setTimeout(()=>{document.querySelectorAll('.scene').forEach(x=>x.classList.remove('on'));el.classList.add('on');
+    if(s.dm){const bs=el.querySelectorAll('.b');const gap=(s.d*1000-500)/bs.length;bs.forEach((b,j)=>setTimeout(()=>b.classList.add('show'),300+j*gap))}
     if(s.chat){const ty=el.querySelector('.ty');let k=0;const sp=Math.max(12,Math.min(40,(s.d*1000-900)/s.chat.length));
       const iv=setInterval(()=>{ty.textContent=s.chat.slice(0,++k);if(k>=s.chat.length)clearInterval(iv)},sp)}
   },t0*1000);

@@ -1,0 +1,50 @@
+{
+"h01-novato":[
+ {"t":"POV: le pides ideas de negocio a la IA como un *novato* 🤡","d":2.4},
+ {"t":"Así no:","dm":[["yo","dame ideas de negocio"],["ia","Vende limonada 🍋"],["yo","..."]],"d":4.2},
+ {"t":"Ni tu tía te da consejos tan *genéricos* 💀","d":2.2},
+ {"tag":"ASÍ SÍ","t":"Dale contexto:","chat":"Actúa como experto en negocios. Tengo [habilidades] y [presupuesto]. Dame 10 negocios realistas en [país].","d":5},
+ {"t":"100 prompts así en la *tienda del perfil*","arrow":true,"d":2.4}],
+"h02-mi-ex":[
+ {"t":"La IA me entiende mejor que *mi ex* 💔","d":2.4},
+ {"dm":[["yo","Necesito ayuda con mi CV"],["ia","¡Claro! ¿Para qué puesto? ¿Qué logros quieres destacar?"],["yo","...me hizo preguntas 🥹"]],"t":"","d":4.8},
+ {"t":"Mi ex nunca me preguntó *nada* 🙄","d":2.2},
+ {"tag":"EL PROMPT","t":"Pégalo:","chat":"Antes de responder, hazme las preguntas que necesites para darme la mejor respuesta sobre [tema].","d":4.6},
+ {"t":"Guárdalo y mándaselo a *tu ex* 😏","arrow":true,"d":2.4}],
+"h03-jefe":[
+ {"t":"Mi jefe: ¿cómo terminaste el informe en *10 minutos*? 😳","d":2.6},
+ {"t":"Yo:","dm":[["yo","Resume este informe en 5 puntos clave y 1 acción concreta: [texto]"],["ia","Listo ✅ Aquí tienes los 5 puntos..."]],"d":4.6},
+ {"t":"Yo fingiendo que me costó *3 horas* 😌☕","d":2.4},
+ {"t":"No le digas a tu jefe. Prompts en el *perfil* 🤫","arrow":true,"d":2.6}],
+"h04-ligar":[
+ {"t":"Le pedí a la IA que me ayudara a *ligar* 😏","d":2.4},
+ {"dm":[["yo","Escribe un mensaje para invitar a salir a alguien sin sonar intenso"],["ia","¿Café esta semana? Tengo una teoría sobre el mejor café de la ciudad y necesito una segunda opinión ☕"]],"t":"","d":5.6},
+ {"t":"Ok... *funcionó* 👀","d":2},
+ {"tag":"BONUS","t":"El mismo truco sirve para escribirle a *clientes* 💼","d":2.8},
+ {"t":"Más prompts en el *perfil* 😉","arrow":true,"d":2.2}],
+"h05-niveles":[
+ {"t":"Niveles de usar ChatGPT 📈","d":2},
+ {"tag":"NIVEL 1","t":"\"hola\" 👋 ...y esperar *magia*","d":2.2},
+ {"tag":"NIVEL 2","t":"\"hazme la tarea\" y *copiar sin leer* 🫠","d":2.4},
+ {"tag":"NIVEL 100","t":"Así:","chat":"Actúa como [experto]. Tarea: [tarea]. Contexto: [situación]. Formato: [tabla]. Luego critica tu respuesta y mejórala.","d":5.4},
+ {"t":"¿En qué nivel estás? 👇 Comenta","arrow":true,"d":2.4}],
+"h06-red-flags":[
+ {"t":"Red flags 🚩 cuando usas la IA","d":2},
+ {"tag":"🚩","t":"Escribirle \"hola\" y quedarte *esperando*","d":2.2},
+ {"tag":"🚩","t":"No darle *contexto* y quejarte de la respuesta","d":2.4},
+ {"tag":"🚩","t":"Copiar todo *sin leer*","d":2},
+ {"tag":"💚 GREEN FLAG","t":"Usar prompts *bien hechos*","d":2.4},
+ {"t":"100 green flags en la *tienda del perfil*","arrow":true,"d":2.4}],
+"h07-gente-sin-ia":[
+ {"t":"Cosas que dice la gente que *no usa IA* 🙄","d":2.2},
+ {"t":"\"Eso es *trampa*\"","d":1.8},
+ {"t":"\"Prefiero hacerlo a mano\" ...lleva *3 horas* 🥲","d":2.4},
+ {"t":"\"La IA no sirve\" ...le escribió *\"hola\"*","d":2.4},
+ {"t":"Mientras tanto yo terminando en *10 min* 😎","d":2.2},
+ {"t":"Únete al lado bueno. Prompts en el *perfil*","arrow":true,"d":2.4}],
+"h08-crush":[
+ {"t":"Cuando la IA te responde más rápido que *tu crush* 😮‍💨","d":2.6},
+ {"dm":[["yo","¿Me ayudas a planificar mi semana?"],["ia","¡Claro! Pásame tus tareas y te armo un horario realista 📅"],["yo","...en 2 segundos 😭"]],"t":"","d":4.8},
+ {"t":"Tu crush: *visto* desde el martes 👻","d":2.2},
+ {"t":"Al menos la IA sí te *organiza la vida*. Prompts en el perfil","arrow":true,"d":2.6}]
+}
