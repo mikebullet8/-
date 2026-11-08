@@ -5,7 +5,7 @@
 |---|---|---|---|
 | 1 | Pack 100 Prompts | ✅ a la venta | $7 |
 | 2 | Servicios con IA (contenido IG, textos de venta, CV) | ✅ a la venta | $10–20 |
-| 3 | Packs de nicho (negocios locales, estudiantes, creadores) | próximo | $5–9 |
+| 3 | Packs de nicho (negocios locales, estudiantes, creadores) | ✅ a la venta en la tienda | $5 |
 | 4 | Afiliados de herramientas de IA | requiere registro del usuario | comisión |
 | 5 | Canal de YouTube faceless | requiere crear canal | publicidad |
 | 6 | Anuncios pagados (promocionar reels) | requiere permiso para gastar | — |
