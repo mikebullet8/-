@@ -1,0 +1,29 @@
+{
+"01-prompt-dinero":[
+ {"t":"Este prompt me dio 10 formas de *ganar dinero*","d":2.6},
+ {"tag":"CÓPIALO","t":"Pégalo en ChatGPT o Claude:","chat":"Actúa como experto en negocios digitales. Tengo estas habilidades: [las tuyas]. Dame 10 formas de ganar dinero online con ellas usando IA, de más rápida a más lenta.","d":6.5},
+ {"tag":"TRUCO","t":"Cambia [las tuyas] por lo que *sabes hacer*","d":2.8},
+ {"t":"Tengo *99 más* así. Enlace en el perfil","arrow":true,"d":3}],
+"02-deja-de-usar-ia-asi":[
+ {"t":"Estás usando la IA *mal*","d":2.2},
+ {"tag":"MAL","t":"Lo que hace casi todo el mundo:","chat":"Dame ideas de negocio","d":3},
+ {"tag":"BIEN","t":"Hazlo *así*:","chat":"Actúa como [experto]. Tu tarea es [tarea]. Contexto: [tu situación]. Formato: [tabla].","d":5.5},
+ {"big":"4","t":"ROL + TAREA + CONTEXTO + *FORMATO*","d":3},
+ {"t":"Guárdalo. *100 prompts* en el perfil","arrow":true,"d":2.8}],
+"03-truco-respuesta-mejor":[
+ {"t":"Escribe esto después de *cualquier* respuesta de la IA","d":2.8},
+ {"tag":"CÓPIALO","t":"Pégalo tal cual:","chat":"Critica tu respuesta anterior como lo haría un experto exigente y dame una versión mejorada.","d":5.5},
+ {"tag":"RESULTADO","t":"La IA revisa su trabajo y lo *mejora*","d":2.8},
+ {"t":"Sígueme para más *trucos de IA*","arrow":true,"d":2.6}],
+"04-entrevista-trabajo":[
+ {"t":"Usa esto antes de tu próxima *entrevista*","d":2.6},
+ {"tag":"CÓPIALO","t":"Pégalo en la IA:","chat":"Simula una entrevista de trabajo para [puesto]. Hazme una pregunta cada vez y evalúa mis respuestas.","d":5.5},
+ {"tag":"RESULTADO","t":"Practicas hasta que te sale *natural*","d":2.6},
+ {"t":"Pack de *100 prompts* en el perfil","arrow":true,"d":2.8}],
+"05-ahorrar-10-horas":[
+ {"big":"10h","t":"que ahorro cada semana con *3 prompts*","d":2.8},
+ {"tag":"1/3","t":"Organizar la semana","chat":"Organiza mi semana. Tareas: [lista]. Prioriza lo que genera dinero.","d":4.5},
+ {"tag":"2/3","t":"Resumir cualquier texto","chat":"Resume esto en 5 puntos y 1 acción: [texto]","d":4},
+ {"tag":"3/3","t":"Vencer la pereza","chat":"Divide [proyecto] en pasos de 5 minutos.","d":3.8},
+ {"t":"Los *100 prompts* en el perfil","arrow":true,"d":2.6}]
+}
