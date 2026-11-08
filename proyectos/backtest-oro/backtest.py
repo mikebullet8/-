@@ -15,7 +15,7 @@ import csv
 import math
 import sys
 
-COST_PER_SIDE = 0.0005  # 0,05% por lado (supuesto, ajústalo a tu broker)
+COST_PER_SIDE = 0.0000338  # spread Vantage ~0,27-0,28 USD (mitad por lado) / precio ~4068
 TRAIN_FRAC = 0.70
 
 
