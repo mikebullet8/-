@@ -1,0 +1,47 @@
+{
+"17-negocio-clientes":[
+ {"t":"¿Tienes un negocio? La IA te consigue *clientes*","d":2.6},
+ {"tag":"CÓPIALO","t":"Pégalo en la IA:","chat":"Mi negocio es [tipo] en [ciudad]. Dame 15 ideas baratas para atraer clientes nuevos este mes.","d":5},
+ {"tag":"BONUS","t":"Tengo *30 prompts* solo para negocios","d":2.4},
+ {"t":"Pack Negocios en la *tienda del perfil*","arrow":true,"d":2.6}],
+"18-estudiante-examen":[
+ {"t":"Estudia para tu examen *en la mitad del tiempo*","d":2.6},
+ {"tag":"CÓPIALO","t":"Pégalo así:","chat":"Hazme 10 preguntas tipo examen sobre [tema], de una en una, y corrígeme.","d":4.5},
+ {"tag":"RESULTADO","t":"Llegas al examen *preparado*","d":2.2},
+ {"t":"Pack Estudiantes en la *tienda del perfil*","arrow":true,"d":2.6}],
+"19-ganchos":[
+ {"t":"Por qué nadie ve tus videos: *el gancho*","d":2.6},
+ {"tag":"CÓPIALO","t":"Pégalo en la IA:","chat":"Dame 10 ganchos para empezar un video sobre [tema] que hagan que nadie deslice.","d":4.5},
+ {"tag":"TRUCO","t":"Los primeros *2 segundos* lo deciden todo","d":2.6},
+ {"t":"Pack Creadores en la *tienda del perfil*","arrow":true,"d":2.6}],
+"20-precio-combo":[
+ {"t":"Haz que cada cliente *gaste más*","d":2.4},
+ {"tag":"CÓPIALO","t":"Pégalo así:","chat":"Crea 3 combos con estos productos: [lista con precios], con precio sugerido.","d":4.5},
+ {"tag":"RESULTADO","t":"Sube tu *ticket promedio*","d":2.2},
+ {"t":"30 prompts para negocios *en el perfil*","arrow":true,"d":2.6}],
+"21-resenas":[
+ {"t":"Responde reseñas malas *como un profesional*","d":2.6},
+ {"tag":"CÓPIALO","t":"Pégalo en la IA:","chat":"Responde a esta reseña negativa de forma profesional y que deje buena imagen: [reseña].","d":5},
+ {"tag":"RESULTADO","t":"Un cliente enojado se vuelve *fiel*","d":2.4},
+ {"t":"Más prompts *en la tienda del perfil*","arrow":true,"d":2.4}],
+"22-plan-estudio":[
+ {"t":"Tu plan de estudio *en 10 segundos*","d":2.4},
+ {"tag":"CÓPIALO","t":"Pégalo así:","chat":"Tengo exámenes de [materias] en [fechas]. Crea un plan de estudio diario realista con descansos.","d":5},
+ {"tag":"RESULTADO","t":"Cero estrés, *todo organizado*","d":2.2},
+ {"t":"Pack Estudiantes *en el perfil*","arrow":true,"d":2.4}],
+"23-media-kit":[
+ {"t":"Cobra a las marcas aunque tengas *pocos seguidores*","d":2.8},
+ {"tag":"CÓPIALO","t":"Pégalo en la IA:","chat":"Crea mi media kit: quién soy, mi audiencia, mis estadísticas [datos] y tarifas sugeridas.","d":5},
+ {"tag":"TRUCO","t":"Mándalo a *5 marcas* hoy","d":2.2},
+ {"t":"Pack Creadores *en el perfil*","arrow":true,"d":2.4}],
+"24-servicio-15":[
+ {"t":"¿Sin tiempo para tus redes? *Te lo hacemos*","d":2.6},
+ {"tag":"SERVICIO","t":"30 publicaciones para tu negocio: ideas, textos y hashtags","d":3.4},
+ {"big":"$15","t":"todo el mes *listo en 48 h*","d":2.8},
+ {"t":"Pídelo en la *tienda del perfil*","arrow":true,"d":2.6}],
+"25-cv-10":[
+ {"t":"¿Buscas trabajo? *Mejoramos tu CV*","d":2.4},
+ {"tag":"SERVICIO","t":"Currículum + carta de presentación listos para enviar","d":3.2},
+ {"big":"$10","t":"entrega en *24–48 h*","d":2.6},
+ {"t":"Pídelo en la *tienda del perfil*","arrow":true,"d":2.4}]
+}
