@@ -1,11 +1,252 @@
-{"scenes":[
- {"title":"No es la IA","color":"red","sub":"es cómo le hablas","say":"¿Por qué la inteligencia artificial le da respuestas geniales a unos, y respuestas mediocres a otros?","typing":true,"brain":"red","labels":[{"t":"TÚ","x":120,"y":440,"px":445,"py":520,"c":"y","at":0.8}]},
- {"chap":"Haz la prueba","title":"Escríbele esto","color":"y","say":"Haz la prueba. Escríbele: dame ideas de negocio.","typing":true,"screen":[["yo","dame ideas de negocio"]],"meter":{"v":15}},
- {"chap":"La respuesta","title":"Lo mismo para todos","color":"red","say":"Te va a responder lo mismo que a todo el mundo: vende comida, abre una tienda, haz dropshipping.","screen":[["yo","dame ideas de negocio"],["ia","Vende comida 🍔 Abre una tienda 🛍️"]],"meter":{"v":15},"labels":[{"t":"GENÉRICO","x":60,"y":640,"px":300,"py":900,"c":"red","at":1.2},{"t":"ABURRIDO","x":740,"y":620,"px":790,"py":900,"c":"red","at":2.2},{"t":"SIN CONTEXTO","x":350,"y":1200,"c":"red","at":3.2}]},
- {"chap":"El truco","title":"1. Dale un rol","color":"y","say":"El truco es darle cuatro cosas. Primero, un rol: actúa como experto en negocios.","typing":true,"brain":"y","screen":[["yo","Actúa como experto en negocios"]],"meter":{"v":35},"labels":[{"t":"ROL","x":800,"y":760,"px":790,"py":930,"c":"y","at":2.5}]},
- {"chap":"El truco","title":"2. Tu contexto","color":"y","say":"Segundo, tu contexto: tengo quinientos dólares y vivo en Guatemala.","typing":true,"brain":"y","screen":[["yo","Tengo $500 y vivo en Guatemala"]],"meter":{"v":60},"labels":[{"t":"CONTEXTO","x":60,"y":760,"px":300,"py":930,"c":"y","at":1.5}]},
- {"chap":"El truco","title":"3. La tarea","color":"y","say":"Tercero, la tarea exacta: dame diez negocios que pueda empezar este mes.","typing":true,"brain":"y","screen":[["yo","Dame 10 negocios para empezar este mes"]],"meter":{"v":80}},
- {"chap":"El truco","title":"4. El formato","color":"y","say":"Y cuarto, el formato: dámelo en una tabla, con lo que cuesta cada uno.","typing":true,"brain":"green","screen":[["yo","En una tabla, con costos"]],"meter":{"v":100}},
- {"chap":"El resultado","title":"Ahora sí","color":"green","say":"Ahora la respuesta es para ti, no para todo el mundo.","brain":"green","screen":[["ia","📊 10 negocios con $500 en Guatemala"]],"meter":{"v":100,"l":"CALIDAD"},"labels":[{"t":"PERSONALIZADO","x":330,"y":1200,"c":"green","at":0.8}]},
- {"title":"100 prompts así","color":"y","say":"Tengo cien prompts así, listos para copiar. Están en el link de mi perfil.","brain":"green","cta":true}
-]}
+{
+ "scenes": [
+  {
+   "title": "No es la IA",
+   "color": "red",
+   "sub": "es cómo le hablas",
+   "say": "Si la IA te da respuestas tontas, no es culpa de la IA.",
+   "typing": true,
+   "brain": "red",
+   "flash": true,
+   "zoom": {
+    "s": 1.12
+   },
+   "labels": [
+    {
+     "t": "TÚ",
+     "x": 120,
+     "y": 440,
+     "px": 445,
+     "py": 520,
+     "c": "y",
+     "at": 0.6
+    }
+   ]
+  },
+  {
+   "chap": "Haz la prueba",
+   "title": "Escríbele esto",
+   "color": "y",
+   "say": "Haz la prueba. Escríbele: dame ideas de negocio.",
+   "typing": true,
+   "screen": [
+    [
+     "yo",
+     "dame ideas de negocio"
+    ]
+   ],
+   "zoom": {
+    "s": 1.6,
+    "y": -200
+   },
+   "meter": {
+    "v": 15
+   }
+  },
+  {
+   "chap": "La respuesta",
+   "title": "Lo mismo para todos",
+   "color": "red",
+   "say": "Y te responde lo mismo que a todo el mundo: vende comida, abre una tienda.",
+   "screen": [
+    [
+     "yo",
+     "dame ideas de negocio"
+    ],
+    [
+     "ia",
+     "Vende comida 🍔"
+    ]
+   ],
+   "zoom": {
+    "s": 0.92
+   },
+   "meter": {
+    "v": 15
+   },
+   "clones": [
+    {
+     "t": "Vende comida 🍔",
+     "x": 40,
+     "y": 620,
+     "at": 1.6
+    },
+    {
+     "t": "Abre una tienda 🛍️",
+     "x": 700,
+     "y": 580,
+     "at": 2.0
+    },
+    {
+     "t": "Vende comida 🍔",
+     "x": 690,
+     "y": 1190,
+     "at": 2.4
+    },
+    {
+     "t": "Abre una tienda 🛍️",
+     "x": 60,
+     "y": 1180,
+     "at": 2.8
+    }
+   ],
+   "labels": [
+    {
+     "t": "GENÉRICO",
+     "x": 380,
+     "y": 400,
+     "c": "red",
+     "at": 1.0
+    }
+   ]
+  },
+  {
+   "chap": "El truco",
+   "title": "1. Un rol",
+   "color": "y",
+   "say": "El truco son cuatro cosas. Uno: un rol. Actúa como experto en negocios.",
+   "typing": true,
+   "brain": "y",
+   "screen": [
+    [
+     "yo",
+     "Actúa como experto en negocios"
+    ]
+   ],
+   "meter": {
+    "v": 35
+   },
+   "zoom": {
+    "s": 1.08
+   },
+   "props": [
+    {
+     "e": "🎓",
+     "x": 478,
+     "y": 330,
+     "at": 1.6
+    }
+   ]
+  },
+  {
+   "chap": "El truco",
+   "title": "2. Tu contexto",
+   "color": "y",
+   "say": "Dos: tu contexto. Tengo quinientos dólares, y vivo en Guatemala.",
+   "typing": true,
+   "brain": "y",
+   "screen": [
+    [
+     "yo",
+     "Tengo $500 y vivo en Guatemala"
+    ]
+   ],
+   "meter": {
+    "v": 60
+   },
+   "props": [
+    {
+     "e": "💵",
+     "t": "$500",
+     "x": 90,
+     "y": 640,
+     "at": 1.3
+    },
+    {
+     "e": "📍",
+     "t": "Guatemala",
+     "x": 820,
+     "y": 640,
+     "at": 2.4
+    }
+   ]
+  },
+  {
+   "chap": "El truco",
+   "title": "3. La tarea",
+   "color": "y",
+   "say": "Tres: la tarea exacta. Diez negocios para empezar este mes.",
+   "typing": true,
+   "brain": "y",
+   "screen": [
+    [
+     "yo",
+     "10 negocios para empezar este mes"
+    ]
+   ],
+   "meter": {
+    "v": 80
+   },
+   "props": [
+    {
+     "e": "🎯",
+     "x": 830,
+     "y": 650,
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "chap": "El truco",
+   "title": "4. El formato",
+   "color": "y",
+   "say": "Y cuatro: el formato. En una tabla, con lo que cuesta cada uno.",
+   "typing": true,
+   "brain": "green",
+   "screen": [
+    [
+     "yo",
+     "En una tabla, con costos"
+    ]
+   ],
+   "meter": {
+    "v": 100
+   },
+   "flash": true,
+   "props": [
+    {
+     "e": "📊",
+     "x": 90,
+     "y": 650,
+     "at": 1.2
+    }
+   ]
+  },
+  {
+   "chap": "El resultado",
+   "title": "Ahora sí",
+   "color": "green",
+   "say": "Ahora la respuesta es para ti, no para todo el mundo.",
+   "brain": "green",
+   "screen": [
+    [
+     "ia",
+     "📊 10 negocios con $500 en Guatemala"
+    ]
+   ],
+   "zoom": {
+    "s": 1.6,
+    "y": -200
+   },
+   "meter": {
+    "v": 100
+   },
+   "labels": [
+    {
+     "t": "PERSONALIZADO",
+     "x": 330,
+     "y": 1210,
+     "c": "green",
+     "at": 0.8
+    }
+   ]
+  },
+  {
+   "title": "100 prompts así",
+   "color": "y",
+   "say": "Tengo cien prompts como este. Link en mi perfil.",
+   "brain": "green",
+   "cta": true
+  }
+ ]
+}

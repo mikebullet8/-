@@ -21,3 +21,8 @@
 - Temas que más explotan: canales faceless de YouTube con IA (infantiles, ASMR), trabajos extra con IA, "códigos" de ChatGPT para imágenes de producto.
 - Series tipo "Día 1 probando trabajos extra con IA" funcionan muy bien.
 - Ritmo rápido, muchos cortes, texto guía en pantalla, música de fondo.
+
+## Control de calidad (prompt 93 aplicado a mí mismo)
+Antes de publicar un formato nuevo: crítica como experto exigente → corregir → revisar fotogramas.
+Checklist: gancho fuerte en 2 s · movimiento/zoom en cada escena · variedad visual (íconos, clones, etiquetas) · efectos de sonido suaves (nunca pitidos) · voz natural · 30–40 s máx · CTA claro.
+Formato estrella actual: explicativo narrado (`entregables/reels/explicativo.html` + `build_explicativo.py`, voz es_MX-claude-high).
