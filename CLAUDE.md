@@ -1,6 +1,6 @@
 # Proyecto: negocio de creador con IA
 
-Habla siempre en español con el usuario, de forma directa y práctica.
+Habla siempre en español con el usuario. Respuestas MUY cortas y al grano: máximo 3-5 líneas, sin explicaciones largas.
 
 ## Objetivo
 Construir y hacer crecer canales de contenido (YouTube, TikTok, Reels) y productos digitales,
