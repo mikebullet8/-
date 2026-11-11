@@ -13,6 +13,7 @@ Cada revisión se anota con hora (UTC), precio y señal. Cada operación real o 
 | 2026-11-09 15:19 | 4115.85 | Venta (ya activada) | Subió a 4125-4135 y bajó de 4125 |
 | 2026-11-09 16:05 | 4124.91 | Ninguna | Justo debajo de 4125, sin subir a la zona en esta revisión |
 | 2026-11-09 17:05 | 4111.80 | Venta (regla cumplida) | Sigue debajo de 4125 |
+| 2026-11-11 03:01 | 4043.47 | Venta vigente | Stop 4215 y objetivo 3950 sin tocar (faltan ~93 pts). Venta 2 y 3 no activadas. Compra no (requiere cierre diario >4195) |
 
 ## Operaciones
 
