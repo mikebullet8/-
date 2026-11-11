@@ -1,0 +1,48 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:540px;height:960px;overflow:hidden;background:#0d0f1a;font-family:'Noto Sans','DejaVu Sans',sans-serif;color:#fff}
+#bg{position:absolute;inset:0;background:radial-gradient(circle at 50% 35%,#2b2f6b 0%,#0d0f1a 70%)}
+.scene{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 34px;opacity:0}
+.hook{font-size:66px;font-weight:900;line-height:1.08;text-shadow:0 4px 0 #000}
+.hook b{color:#ffd23f}
+.num{position:relative;margin-bottom:22px;font-size:30px;font-weight:800;background:#ffd23f;color:#111;padding:6px 18px;border-radius:30px}
+.emo{font-size:210px;line-height:1;filter:drop-shadow(0 12px 18px rgba(0,0,0,.5))}
+.name{font-size:50px;font-weight:900;margin-top:26px;line-height:1.1}
+.ben{font-size:34px;margin-top:16px;color:#cfd3ff;line-height:1.25}
+.price{margin-top:30px;font-size:46px;font-weight:900;background:#2ecc71;color:#06210f;padding:8px 26px;border-radius:16px}
+.cta1{font-size:58px;font-weight:900;line-height:1.1}
+.cta2{font-size:44px;margin-top:26px;font-weight:800;color:#ffd23f}
+.cta3{font-size:32px;margin-top:22px;color:#cfd3ff}
+#bar{position:absolute;left:0;bottom:0;height:8px;background:#ffd23f}
+</style></head><body><div id="bg"></div>
+<div class="scene" id="s0"><div class="hook">5 gadgets <b>baratos</b><br>que te van a<br>cambiar la vida 🤯</div></div>
+<div id="items"></div>
+<div class="scene" id="sc"><div class="emo" style="font-size:120px">🛍️</div><div class="cta1">Envío gratis 🌎</div><div class="cta2">Escríbeme <b style="color:#fff">GADGETS</b><br>por DM 📩</div><div class="cta3">y te paso la tienda</div></div>
+<div id="bar"></div>
+<script>
+const P=[["🍟","Mini sellador de bolsas","Tus snacks como nuevos en 2 segundos","$14"],
+["🐶","Quitapelos de mascotas","Sin cinta, sin pilas. Para siempre","$17"],
+["💡","Luces con sensor (x3)","Se encienden solas. Sin cables","$24"],
+["📱","Soporte de ducha para celular","Tu serie en la ducha sin mojarlo","$13"],
+["🧍","Corrector de postura inteligente","Vibra cuando te encorvas","$32"]];
+const box=document.getElementById('items');
+P.forEach((p,i)=>{box.insertAdjacentHTML('beforeend',`<div class="scene" id="p${i}"><div class="num">#${i+1}</div><div class="emo">${p[0]}</div><div class="name">${p[1]}</div><div class="ben">${p[2]}</div><div class="price">${p[3]} USD</div></div>`)});
+const HOOK=2.6, ITEM=2.9, CTA=3.6; const TOTAL=HOOK+ITEM*P.length+CTA; window.TOTAL=TOTAL;
+const ease=x=>1-Math.pow(1-Math.min(Math.max(x,0),1),3);
+function show(el,t,d){ // t = time since scene start
+  if(t<0||t>d){el.style.opacity=0;return}
+  const a=ease(t/0.35), out=t>d-0.2?ease((d-t)/0.2):1;
+  el.style.opacity=Math.min(a,out);
+  const s=0.85+0.15*ease(t/0.35)+0.03*(t/d); el.style.transform=`scale(${s})`;
+}
+window.render=function(t){
+  show(document.getElementById('s0'),t,HOOK);
+  P.forEach((p,i)=>{const st=HOOK+i*ITEM; const el=document.getElementById('p'+i); show(el,t-st,ITEM);
+    const e=el.querySelector('.emo'); e.style.transform=`rotate(${Math.sin((t-st)*4)*6}deg) translateY(${-Math.abs(Math.sin((t-st)*3))*14}px)`;
+    const pr=el.querySelector('.price'); pr.style.opacity=ease((t-st-0.8)/0.3);});
+  const ct=t-(HOOK+ITEM*P.length); show(document.getElementById('sc'),ct,CTA+1);
+  document.getElementById('bar').style.width=(t/TOTAL*100)+'%';
+  document.getElementById('bg').style.transform=`scale(${1.08+0.04*Math.sin(t*0.8)})`;
+};
+render(0);
+</script></body></html>
