@@ -41,3 +41,5 @@ Antes de modificar uno, leer su README y su código y ejecutar sus tests si exis
 - Packs $5: Negocios 1b1lc1OchsWqXCbkZmmpPmPviA62YIQksmnngR5-NxcI · Estudiantes 1zF4XErgon9zKR_bHUGgPHZ1GeACKldszcMDrQlO7aMs · Creadores 1XZHrLA2VcZlf2VjCZbDep05zm6QhW3yP5pd6phy39tY (este último debe compartirlo el usuario).
 - Binance afiliado: código GRO_28502_EAXVL, enlace https://www.binance.com/referral/earn-together/refer2earn-usdc/claim?hl=es&ref=GRO_28502_EAXVL&utm_source=referral_entrance (indicar siempre que es enlace de afiliado).
 - Plan: `entregables/plan-ceo.md` (incluye control de calidad obligatorio antes de publicar).
+- Shopify (dropshipping): tienda "Mi tienda" wns4bi-hw.myshopify.com, plan trial, moneda GTQ. 10 productos creados en BORRADOR (SKU ATJ-01..10), sin fotos ni proveedor. Textos en `entregables/shopify-descripciones-10-productos.md`, guiones en `entregables/guiones-ugc-10-productos.md`.
+- TikTok Shop vía AfterShip: onboarding sin hacer (falta conectar Shopify + cuenta de vendedor TikTok Shop). El conector "Shop" es para comprar, no para vender: no usarlo.
