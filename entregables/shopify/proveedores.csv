@@ -1,0 +1,13 @@
+SKU,Producto,Precio de venta (USD),Costo proveedor estimado (USD),Ganancia estimada (USD),Margen,Enlace AliExpress,Qué elegir
+ATJ-01,Corrector de postura inteligente,32,8,=C2-D2,"=IF(C2=0,0,E2/C2)",https://www.aliexpress.com/w/wholesale-smart-posture-corrector.html,Elegir uno con sensor y vibración (no electroestimulador)
+ATJ-02,Rodillo quitapelos de mascotas,17,4,=C3-D3,"=IF(C3=0,0,E3/C3)",https://www.aliexpress.us/item/3256806474158858.html,Modelo con base autolimpiable
+ATJ-03,Mini sellador de bolsas,14,3,=C4-D4,"=IF(C4=0,0,E4/C4)",https://www.aliexpress.us/item/3256803818352676.html,"2 en 1 con cortador, USB"
+ATJ-04,Organizador de cables magnético,25,3,=C5-D5,"=IF(C5=0,0,E5/C5)",https://www.aliexpress.us/item/3256810097032654.html,Pack de 6 ganchos magnéticos
+ATJ-05,Masajeador de cuello eléctrico,45,12,=C6-D6,"=IF(C6=0,0,E6/C6)",https://www.aliexpress.com/w/wholesale-pulse-back-neck-massager.html,Confirmar que incluye batería recargable
+ATJ-06,Organizador para asiento de carro,22,8,=C7-D7,"=IF(C7=0,0,E7/C7)",https://www.aliexpress.us/item/2255800961700304.html,9 bolsillos + soporte de tablet
+ATJ-07,Luces LED con sensor (pack de 3),24,9,=C8-D8,"=IF(C8=0,0,E8/C8)",https://www.aliexpress.com/w/wholesale-led-closet-light-motion-sensor-usb.html,Comprar 3 unidades recargables USB
+ATJ-08,Botella con marcador de horas,19,4,=C9-D9,"=IF(C9=0,0,E9/C9)",https://www.aliexpress.com/w/wholesale-motivational-water-bottle-with-time-marker.html,"Marcas impresas, no stickers"
+ATJ-09,Soporte de celular impermeable,13,4,=C10-D10,"=IF(C10=0,0,E10/C10)",https://www.aliexpress.us/item/3256811750738930.html,"Autoadhesivo, pantalla táctil"
+ATJ-10,Limpiador de oídos con cámara,32,12,=C11-D11,"=IF(C11=0,0,E11/C11)",https://www.aliexpress.us/item/3256806674060135.html,"WiFi 1080P, con puntas de recambio"
+
+,"Costos: estimación de búsquedas en AliExpress, nov 2026. Confirma el precio real con envío al país del cliente antes de comprar y cámbialo en la columna D."
