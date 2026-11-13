@@ -1,0 +1,104 @@
+/*
+ * Copyright (c) 2026 Enrique Rocha (@soyenriquerocha)
+ * SPDX-License-Identifier: MIT
+ * id: er-805c9b73
+ */
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* Respect users who prefer reduced motion (WCAG 2.3.3). */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #37352F;
+  --card: #FCFCFB;
+  --card-foreground: #37352F;
+  --popover: #ffffff;
+  --popover-foreground: #37352F;
+  --primary: #37352F;
+  --primary-foreground: #ffffff;
+  --secondary: #F7F7F5;
+  --secondary-foreground: #37352F;
+  --muted: #F7F7F5;
+  --muted-foreground: #8B8B85;
+  --accent: #F7F7F5;
+  --accent-foreground: #37352F;
+  --destructive: #e94560;
+  --border: #E6E6E4;
+  --input: #E6E6E4;
+  --ring: #37352F;
+  --chart-1: #f7931a;
+  --chart-2: #00c853;
+  --chart-3: #2196f3;
+  --chart-4: #ffc107;
+  --chart-5: #e94560;
+  --radius: 0.75rem;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+    min-height: 100vh;
+  }
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  .print-break-before {
+    page-break-before: always;
+  }
+  * {
+    break-inside: avoid;
+  }
+}
